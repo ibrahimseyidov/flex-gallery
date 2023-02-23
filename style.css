@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
